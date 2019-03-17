@@ -11,6 +11,8 @@
 		ACD5E82621AFCFF10071A883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD5E82521AFCFF10071A883 /* Assets.xcassets */; };
 		ACD5E82821AFD4020071A883 /* RGBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD5E82721AFD4020071A883 /* RGBViewController.swift */; };
 		ACD5E82A21AFD40F0071A883 /* HEXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD5E82921AFD40F0071A883 /* HEXViewController.swift */; };
+		ACE889B1223E7F160036DACC /* ConvertRGBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE889B0223E7F160036DACC /* ConvertRGBViewController.swift */; };
+		ACE889B3223EDB240036DACC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE889B2223EDB240036DACC /* Data.swift */; };
 		ACFDA8BA21AFB584005CCE2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFDA8B921AFB584005CCE2F /* AppDelegate.swift */; };
 		ACFDA8BF21AFB584005CCE2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFDA8BD21AFB584005CCE2F /* Main.storyboard */; };
 		ACFDA8C421AFB586005CCE2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFDA8C221AFB586005CCE2F /* LaunchScreen.storyboard */; };
@@ -21,6 +23,8 @@
 		ACD5E82521AFCFF10071A883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD5E82721AFD4020071A883 /* RGBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBViewController.swift; sourceTree = "<group>"; };
 		ACD5E82921AFD40F0071A883 /* HEXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HEXViewController.swift; sourceTree = "<group>"; };
+		ACE889B0223E7F160036DACC /* ConvertRGBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertRGBViewController.swift; sourceTree = "<group>"; };
+		ACE889B2223EDB240036DACC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		ACFDA8B621AFB584005CCE2F /* RgbHex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RgbHex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFDA8B921AFB584005CCE2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACFDA8BE21AFB584005CCE2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +43,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ACE889AE223E6E9A0036DACC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACD5E82721AFD4020071A883 /* RGBViewController.swift */,
+				ACE889B0223E7F160036DACC /* ConvertRGBViewController.swift */,
+				ACD5E82921AFD40F0071A883 /* HEXViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ACE889AF223E6EA50036DACC /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				ACFDA8B921AFB584005CCE2F /* AppDelegate.swift */,
+				ACFDA8BD21AFB584005CCE2F /* Main.storyboard */,
+				ACFDA8C221AFB586005CCE2F /* LaunchScreen.storyboard */,
+				ACE889B2223EDB240036DACC /* Data.swift */,
+				ACD5E82521AFCFF10071A883 /* Assets.xcassets */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		ACFDA8AD21AFB584005CCE2F = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +85,8 @@
 		ACFDA8B821AFB584005CCE2F /* RgbHex */ = {
 			isa = PBXGroup;
 			children = (
-				ACFDA8B921AFB584005CCE2F /* AppDelegate.swift */,
-				ACD5E82721AFD4020071A883 /* RGBViewController.swift */,
-				ACD5E82921AFD40F0071A883 /* HEXViewController.swift */,
-				ACD5E82521AFCFF10071A883 /* Assets.xcassets */,
-				ACFDA8BD21AFB584005CCE2F /* Main.storyboard */,
-				ACFDA8C221AFB586005CCE2F /* LaunchScreen.storyboard */,
+				ACE889AF223E6EA50036DACC /* Supporting files */,
+				ACE889AE223E6E9A0036DACC /* Controllers */,
 				ACFDA8C521AFB586005CCE2F /* Info.plist */,
 			);
 			path = RgbHex;
@@ -142,6 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE889B1223E7F160036DACC /* ConvertRGBViewController.swift in Sources */,
+				ACE889B3223EDB240036DACC /* Data.swift in Sources */,
 				ACD5E82821AFD4020071A883 /* RGBViewController.swift in Sources */,
 				ACD5E82A21AFD40F0071A883 /* HEXViewController.swift in Sources */,
 				ACFDA8BA21AFB584005CCE2F /* AppDelegate.swift in Sources */,
